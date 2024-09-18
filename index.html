@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              Manrope: ["Manrope"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[hsl(210,46%,95%)] font-Manrope">
+    <div
+      class="flex flex-col sm:flex-col md:flex-row h-screen w-screen justify-center items-center"
+    >
+      <div>
+        <img
+          class="rounded-l-lg md:w-[362px]"
+          src="./images/drawers.jpg"
+          alt="office room contains green table and other materiels"
+        />
+      </div>
+      <div
+        class="bg-[hsl(0,0%,100%)] md:w-[420px] rounded-r-lg space-y-[17px] p-[40px] text-[hsl(217,19%,35%)]"
+      >
+        <h1 class="font-semibold text-[20px] leading-6">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="text-[13px] text-[hsl(214,17%,51%)]">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-row gap-5 justify-between items-center">
+            <img
+              class="w-[40px] h-8 rounded-full"
+              src="./images/avatar-michelle.jpg"
+              alt="user profile"
+            />
+            <div>
+              <h5 class="font-medium">Michelle Appleton</h5>
+              <p class="text-[13px] text-[hsl(214,17%,51%)]">28 Jun 2020</p>
+            </div>
+          </div>
+          <div
+            class="bg-[hsl(210,46%,95%)] w-[25px] h-7 rounded-full flex justify-between items-center"
+          >
+            <img
+              class="w-[17px] h-[10px]"
+              src="./images/icon-share.svg"
+              alt="share icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
